@@ -5,87 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Jéssica Araujo | Dev </title>
 
-   <!--favicon-->
-   <link rel="icon" href="img/favicon.ico">
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
 
-   <!--Gogle fontes-->
+    <!-- Google Fontes API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
 
-    <!-- validadores Bootstraps CSS-->
+    <!-- validadores Bootstraps CSS -->
     <link rel="stylesheet" href="validador/aos/aos.css">
     <link rel="stylesheet" href="validador/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="validador/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="validador/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" href="validador/glightbox/css/glightbox.min.css">
     <link rel="stylesheet" href="validador/swiper/swiper-bundle.min.css">
-    
+
     <!-- estilo CSS -->
     <link rel="stylesheet" href="css/estilo.css">
-    
 
 </head>
 <body>
- <!-- botao para alteral a navegação mobile-->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"> </i>
+
+    <!-- botao para alternar a navegação mobile -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- Cabeçalho ===  HEADER --> 
+    <header id="header">
+        <div class="d-flex flex-column"> <!--div flex -->
+
+            <div class="profile">  <!-- profile -->
+                <img src="img/perfil.jpeg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light">Jéssica Araujo</h1>
+
+                <div class="social-links mt-3 text-center"> <!-- Social Links -->
+
+                    <a href="https://www.tiktok.com/@jess.brg" class="tiktok"> <i class="bx bxl-tiktok"></i> </a>
+                    <a href="https://www.facebook.com/profile.php" class="facebook"> <i class="bx bxl-facebook"></i> </a>
+                    <a href="https://www.instagram.com/jess.araujinho" class="instagram"> <i class="bx bxl-instagram"></i> </a>
+                    <a href="https://br.pinterest.com/jessaraujinho" class="pinterest"> <i class="bx bxl-pinterest"></i> </a>
+                    
+                </div> <!-- Social Links -->
+            </div>   <!--fim profile -->
+
+            <nav id="navbar" class="nav-menu navbar">  
+                <ul>
+                    <li> <a href="#hero" class="nav-link scrollto active">
+                        <i class="bx bx-home"></i> <span>Inicio</span> </a></li>
+
+                    <li> <a href="#about" class="nav-link scrollto">
+                        <i class="bx bx-user"></i> <span>Sobre</span> </a></li>
+
+                    <li> <a href="#resume" class="nav-link scrollto">
+                        <i class="bx bx-file-blank"></i> <span>Resumo</span> </a></li>
+
+                    <li> <a href="#portfolio" class="nav-link scrollto">
+                        <i class="bx bx-book-content"></i> <span>Portfolio</span> </a></li>
+
+                    <li> <a href="#services" class="nav-link scrollto">
+                        <i class="bx bx-server"></i> <span>Serviços</span> </a></li>
+
+                    <li> <a href="#contact" class="nav-link scrollto">
+                        <i class="bx bx-envelope"></i> <span>Contato</span> </a> </li>
+                </ul>
+            </nav>
+
+        </div> <!--fim div flex -->
+    </header> <!-- FIM Cabeçalho -->
+
+    <!-- começo HERO -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-in"> <!-- container --> 
+            <h1> Jéssica Araujo  </h1>
+            <p> Eu sou <span class="typed" data-typed-items="Freelancer, Dev, Designer, futura psicologa "> </span> </p>
+        </div> <!-- fim container -->
+    </section> <!-- Fim HERO -->
+
+   <main id="main"> <!--inicio Main-->
+ 
+    <!-- inicio sobre-->
+    <section id="about" class="about">
+     <div class="container">
+      
+        <div class="section-title">
+            <h2>Sobre</h2>
+            <p>
+                Sou estudande de psicologia, quero me formar na área jurídica, tenho formação em Téc. de segurança do trabalho e em outros cursos rápidos. Meu passatempo preferido é ler, porém gosto de dançar, ouvir musicas, fazer crôche e cozinhar. Meu lugar favorito é a praia porque me traz uma sensação de paz e me ajuda a organizar meus pensamentos.
+            </p>
+        </div>
+
+        <div class="Row">
+
+        <div class="col-lg-4" data-aos="fade-right">
+            <img src="img/perfil.jpeg" alt="" class="img-fluid" width="800px" height="800px">
+        </div>
+        <div class="col-lg-8 pt-lg-0 content" data-aos="fade-left">
+          <h3> Estudante de psicologia</h3>
+          <p class="fst-italic"> Aprimorando ainda mais meus conhecimentos</p>
+        </div> <!--Fim fade left-->
+
+       
+
+
+
+
+
+
+
+    </div> <!-- fim Div Row-->
+     </div> <!--fim Div Container-->
+    </section>
+   
+   </main> <!-- fim da main -->
+
+
+
+
+
     
-  <!-- cabeçalho === HEADER -->
-  <header id="header">
-   <div class="d-flex flex-colum"> <!-- div flex-->
-
-
-    <div class="profile">
-      <img src="img/perfil.jpeg" alt="" class="imag-fluid rounded-circle">
-      <h1 class="text-light"> Jéssica Araujo </h1>
-      <div class="social-links mt-3 text-center"> <!-- social links -->
-       <a href="#" class="instagram"> <i class="bx bxl-instagram"></i> </a>
-       <a href="#" class="pinterest"> <i class="bx bxl-pinterest"></i> </a>
-       <a heref="#" class="tiktok"> <i class="bx bxl-tiktok"></i> </a>
-       </div> <!-- social links-->
-    </div> <!-- fim profile-->
-
-    <nav id="navbar" class="nav-menu navbar">
-
-    <ul>
-        <li> <a href="#hero" class="nav-link scrollto active"> <i class="bx bx-home"></i> <span> inicio </span> </a> </li>
-        <li> <a href="#about" class="nav-link scrollto"> <i class="bx bx-user"></i> <span> sobre </span> </a> </li>
-        <li> <a href="#resume" class="nav-link scrollto"> <i class="bx bx-file-blank"></i> <span> resumo </span> </a> </li>
-        <li> <a href="#portfolio" class="nav-link scrollto"> <i class="bx bx-book-content"></i> <span> portfolio </span> </a> </li>
-        <li> <a href="#services" classs="nav-link scrollto"> <i class="bx bx-server"></i> <span> serviços </span> </a> </li>
-        <li> <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span> contato </span>  </a> </li>
-    </ul>
-
-</nav>
-
-   </div>  <!--fim div flex -->
-</header> <!-- FIM cabeçalho -->
-
-<!-- começo HERO-->
-    <section id="hero" class="d-flex flex-colum justify-conten-center allign-items-center">
-     <div class="hero-container" data-aos="fade-in"> <!--container-->
-     <h1>jéssica Araujo </h1>
-     <p> Eu sou estudante de <sapan class="typed" data-typed-items=" Piscologia"> </sapan></p>
-     </div> <!--fim container-->
-  </section> <!--fim Hero-->
-
-
 
 
     <!-- validadores JS -->
 
-    <script src="validador/purecounter/purecounter_vanilla.js "></script>
-    <script src="validador/aos/aos.js "></script>
-    <script src="validador/bootstrap/js/bootstrap.bundle.min.js"></script> 
-    <script src="validador/glightbox/js/glightbox.min.js "></script>
-    <script src="validador/isotope-layout/isotope.pkgd.min.js "></script>
-    <script src="validador/swiper/swiper-bundle.min.js "></script>
-    <script src="validador/typed.js/typed.umd.js "></script>
-    <script src="validador/waypoints/noframework.waypoints.js "></script>
-
-
+    <script src="validador/purecounter/purecounter_vanilla.js"></script>
+    <script src="validador/aos/aos.js"></script>
+    <script src="validador/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="validador/glightbox/js/glightbox.min.js"></script>
+    <script src="validador/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="validador/swiper/swiper-bundle.min.js"></script>
+    <script src="validador/typed.js/typed.umd.js"></script>
+    <script src="validador/waypoints/noframework.waypoints.js"></script>
 
     <!-- JS principal -->
     <script src="js/main.js"></script>
+
 </body>
 </html>
