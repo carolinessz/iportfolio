@@ -423,16 +423,16 @@ section{
     background: #d37955;
     border: 2px solid #ecad88;
 }
-/* portfolio */
-.portfolio .portfolio-item {
+/*  portfolio  */
+.portfolio .portfolio-item{
     margin-bottom: 30px;
 }
 .portfolio #portfolio-filters {
     padding: 0;
-    margin:0 auto 35px auto;
+    margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
-    background: #ecad88;
+    background: #c7c9c7;
     border-radius: 50px;
 }
 .portfolio #portfolio-filters li {
@@ -443,48 +443,59 @@ section{
     font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
-    color:#f8f8f8;
+    color: #050d18;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-filters li:hover,
-.portfolio #portfolio-filters li.filter-active{
-    color: #3a535f;
+.portfolio #portfolio-filters li.filter-active {
+    color: #ecad88;
 }
-.portfolio .portfolio-wrap{
+.portfolio .portfolio-wrap {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
     z-index: 1;
-    opacity: 0;
 }
-.portfolio .portfolio-wrap .portfolio-links{
-    opacity: 1;
+.portfolio .portfolio-wrap::before{
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
     left: 0;
     right: 0;
-    bottom: -60px;
-    z-index: 3;
-    position: absolute;
+    top: 0;
+    bottom: 0;
     transition: all ease-in-out 0.3s;
-    display: flex;
-    justify-content: center;
+    z-index: 2;
+    opacity: 0;
 }
-.portfolio .portfolio-wrap .portfolio-links a{
-    color:#fff;
+.portfolio .portfolio-wrap .portfolio-links {
+   opacity: 1;
+   left: 0;
+   right: 0;
+   bottom: -60px;
+   z-index: 3;
+   position: absolute;
+   transition: all ease-in-out 0.3s;
+   display: flex;
+   justify-content: center; 
+}
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
     font-size: 28px;
     text-align: center;
-    background: #3a535f;
+    background: rgba(20, 157, 221, 0.75);
     transition: 0.3s;
     width: 50%;
 }
-.portfolio .portfolio-wrap .portfolio-links a:hover{
-    background: #212431;
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: rgba(20, 157, 221, 0.95);
 }
-.portfolio .portfolio-wrap .portfolio-links a+a{
-    border-left: 1px solid #ecad88;
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid #37b3ed;
 }
 .portfolio .portfolio-wrap:hover::before{
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -493,4 +504,174 @@ section{
 .portfolio .portfolio-wrap:hover .portfolio-links{
     opacity: 1;
     bottom: 0;
+}
+
+/* Portfolio Detalhes/ Certificados */
+.portfolio-details{
+    padding-top: 40px;
+}
+.portfolio-details .portfolio-details-slider img{
+    width: 100%;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination{
+    margin-top: 20px;
+    position: relative;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination.bullet{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 1;
+    border: 1px solid #ecad88;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination.bullet-acive{
+    background: #d37955;
+}
+.portfolio-details .portfolio-info{
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(5, 13, 24, 0.08);
+}
+.portfolio-details .portfolio-info h3{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.portfolio-details .portfolio-info ul{
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+.portfolio-details .portfolio-info ul li+li{
+    margin-top: 10px;
+}
+.portfolio-details .portfolio-description{
+    padding-top:30px;
+}
+.portfolio-details .portfolio-description h2{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.portfolio-details .portfolio-description p{
+    padding: 0;
+}
+
+/*fim */
+/* Nav-Estrutural */
+.nav-estrututal {
+    padding: 20px 0;
+    background: #2eafec;
+}
+.nav-estrututal h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+.nav-estrututal ol{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+.nav-estrututal ol li+li::before{
+    display: inline-block;
+    padding-left: 10px;
+    color: #534651;
+    content: "/";
+}
+@media(max-width:768px){
+    .nav-estrututal .d-flex{
+        display: block !important;
+    }
+    .nav-estrututal ol{
+        display: block;
+    }
+    .nav-estrututal ol li {
+        display: inline-block;
+    }
+}
+
+/*===================*/
+/*serviços*/
+.services .icon-box{
+    margin-bottom: 20px;
+}
+.services .icon{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:54px ;
+    height:54px ;
+    border-radius: 50%;
+    background: #d37955;
+    transition: 0.5s;
+    border: 1px solid #ecad88;
+}
+.services .icon i{
+    color: rgb(224, 224, 224);
+    font-size: 24px;
+    line-height: 0;
+}
+.services .icon-box:hover .icon{
+background: #e0b399;
+}
+.services .icon-box:hover .icon i{
+color: antiquewhite;
+}
+.services .title{
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.services .description{
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+/*fim Serviços*/
+/*===============*/
+/*Avaliações*/
+
+
+
+
+/*fim Avaliações*/
+/*contatos*/
+
+
+/*fim contatos*/
+
+/*Roda pé*/
+#footer{
+    padding: 10px;
+    color: #a0a0a3;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background: #032333;
+}
+#footer .copyright{
+    text-align: center;
+}
+#footer .creditos{
+    padding-top: 2px;
+    text-align: center;
+    font-size: 16px;
+    color:#000000;
+}
+@media(max-width:1199px){
+    #footer{
+        position: static;
+        width: auto;
+        padding-right: 20px 15px;
+    }
 }
